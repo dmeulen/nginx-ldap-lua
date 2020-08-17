@@ -1,10 +1,10 @@
-FROM alpine:3.9.3
+FROM alpine:3.12.0
 
-ENV NGINX_VERSION release-1.16.0
+ENV NGINX_VERSION release-1.19.2
 ENV LUAJIT_VERSION 2.0.5
-ENV LUA_NGX_MODULE_VERSION 0.10.14
+ENV LUA_NGX_MODULE_VERSION 0.10.17
 ENV LUA_RESTY_DNS_VERSION 0.21
-ENV NGINX_DEV_KIT_VERSION 0.3.0
+ENV NGINX_DEV_KIT_VERSION 0.3.1
 
 RUN apk add --no-cache ca-certificates pcre libldap libgcc libressl \
   && apk add --no-cache --virtual build-dependencies \
